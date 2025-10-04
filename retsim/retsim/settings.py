@@ -120,6 +120,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "simulator" / "static",
+    BASE_DIR / "users" / "static",
 ]
 STATIC_ROOT = BASE_DIR / "static"
 
