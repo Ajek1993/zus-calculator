@@ -1,0 +1,9 @@
+from django.shortcuts import render
+
+# Create your views here.
+
+def index(request):
+    return render(request, 'simulator/index.html')
+
+def start_simulation(request):
+    pass
