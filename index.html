@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prosty Formularz</title>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="logo_zus_darker_with_text.svg" alt="Logo" class="logo" />
+    </nav>
+    <div class="container">
+      <form action="#" method="post" novalidate>
+        <h2>Symulacja przyszłej emerytury</h2>
+
+        <div class="form-group">
+          <label for="age">Wiek (OBOWIĄZKOWO)</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="15"
+            max="100"
+            required
+            placeholder="Wpisz wiek"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Płeć (OBOWIĄZKOWO)</label>
+          <select id="gender" name="gender" required>
+            <option value="" disabled selected>Wybierz płeć</option>
+            <option value="male">Mężczyzna</option>
+            <option value="female">Kobieta</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="gross_salary"
+            >Wysokość wynagrodzenia brutto (OBOWIĄZKOWO)</label
+          >
+          <input
+            type="number"
+            id="gross_salary"
+            name="gross_salary"
+            min="0"
+            step="0.01"
+            required
+            placeholder="Wpisz wynagrodzenie brutto"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="start_year">Rok rozpoczęcia pracy (OBOWIĄZKOWO)</label>
+          <input
+            type="number"
+            id="start_year"
+            name="start_year"
+            min="1950"
+            max="2100"
+            required
+            placeholder="Wpisz rok rozpoczęcia pracy (styczeń)"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="end_year"
+            >Planowany rok zakończenia aktywności zawodowej (OBOWIĄZKOWO)</label
+          >
+          <input
+            type="number"
+            id="end_year"
+            name="end_year"
+            min="1950"
+            max="2100"
+            required
+            placeholder="Wpisz planowany rok zakończenia (styczeń)"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="zus_funds"
+            >Wysokość zgromadzonych środków na koncie i subkoncie w ZUS
+            (FAKULTATYWNIE)</label
+          >
+          <input
+            type="number"
+            id="zus_funds"
+            name="zus_funds"
+            min="0"
+            step="0.01"
+            placeholder="Wpisz środki zgromadzone w ZUS"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="include_sick_leave">
+            <input
+              type="checkbox"
+              id="include_sick_leave"
+              name="include_sick_leave"
+            />
+            Uwzględniaj możliwość zwolnień lekarskich
+          </label>
+        </div>
+
+        <!-- Dodatkowe pola jako pola tekstowe (dopełnienie liczby 10 pól - można dostosować) -->
+
+        <div class="form-group">
+          <label for="additional_1">Dane dodatkowe 1</label>
+          <input
+            type="text"
+            id="additional_1"
+            name="additional_1"
+            placeholder="Dowolna informacja"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="additional_2">Dane dodatkowe 2</label>
+          <input
+            type="text"
+            id="additional_2"
+            name="additional_2"
+            placeholder="Dowolna informacja"
+          />
+        </div>
+
+        <button type="submit">Zaprognozuj moją przyszłą emeryturę</button>
+      </form>
+    </div>
+  </body>
+</html>
